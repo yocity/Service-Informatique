@@ -1,0 +1,277 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+body
+{ 
+    background: black;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+} 
+.menu
+{
+    width: 995px;
+    background-color: orangered;
+    border-collapse: separate;
+    text-align: center;
+    margin: 0 auto;
+    top:0%;
+    position: sticky;
+    border-radius: 20px;
+    z-index: 120;
+    padding: auto;
+    
+}
+nav.menu
+{ 
+    align-items: center;
+    text-align: center;
+}
+.menu >ul
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.menu >ul> li
+{
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.menu ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.sous-menu
+{
+    display: none;
+    z-index: 120;
+}
+.menu input[type=checkbox]
+{
+    display: none;
+}
+.menu label 
+{
+    display: none;
+}
+.menu a 
+{
+    display: inline-flex;
+    text-decoration: none;
+    text-align: center;;
+}
+.menu ul li a 
+{
+    padding: 20px 30px;
+    color: white;
+    width: 82px;
+    display: block;
+    border-radius: 20px;
+}
+.menu li:hover .sous-menu
+{ 
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.sous-menu li a 
+{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: black;
+    width: auto;
+}
+.sous-menu li
+{
+    border-bottom: 1px  #ccc;
+}
+.a:hover
+{
+    border-top:  5px solid rgb(221, 209, 209);
+    background-color: rgba(228, 77, 38, 0.15);
+    border-radius: 20px;
+}
+.p:hover
+{
+    border-top:  5px solid rgb(221, 209, 209);
+    background-color: rgba(228, 77, 38, 0.15);
+    border-radius: 20px;
+}
+.pr:hover
+{
+    border-top: 5px solid bisque;
+    background-color: rgba(241, 211, 79, 0.15);
+    border-radius: 20px;
+}
+.f:hover
+{
+
+    border-top: 5px solid bisque;
+    background-color: rgba(130, 128, 119, 0.15);
+    border-radius: 20px;
+}
+.pa:hover
+{
+    border-top: 5px solid rgb(158, 158, 165);
+    background-color: rgba(220, 220, 220, 0.15);
+    border-radius: 20px;
+}
+.s:hover
+{
+    border-top: 5px solid #aaa;
+    background-color: rgba(230, 76, 90, 0.15);
+    border-radius: 20px;
+}
+.c:hover
+{
+    border-top: 5px solid rgb(122, 129, 134);
+    background-color: rgba(70, 106, 133, 0.15);
+    border-radius: 20px;
+}
+.a .sous-menu
+{
+    background-color: rgba(228, 77, 38, 0.15);
+    border-radius: 20px;
+}
+.p .sous-menu
+{
+    background-color: black;
+    border-radius: 20px;
+}
+.pr .sous-menu
+{
+    background-color: black;
+    border-radius: 20px;
+}
+.f .sous-menu
+{
+    background-color: black;
+    border-radius: 20px;
+}
+.pa .sous-menu
+{
+    background-color: black;
+    border-radius: 20px;
+}
+.s .sous-menu
+{
+    background-color: black;
+    border-radius: 20px;
+}
+.c .sous-menu
+{
+    background-color: black;
+    border-radius: 20px;
+}
+.sous-menu li:hover a
+{
+    color: #eee;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.a .sous-menu li:hover
+{
+    background-color: rgb(21, 20, 19);
+    border-radius: 20px;
+}
+.p .sous-menu li:hover
+{
+    background-color: rgb(19, 17, 17);
+    border-radius: 20px;
+}
+.pr .sous-menu li:hover
+{
+    background-color: rgb(26, 28, 28);
+    border-radius: 20px;
+}
+.f .sous-menu li:hover
+{
+    background-color: rgb(69, 67, 64);
+    border-radius: 20px;
+}
+.pa .sous-menu li:hover
+{
+    background-color: rgb(25, 23, 22);
+    border-radius: 20px;
+}
+.s .sous-menu li:hover
+{
+    background-color: rgb(44, 44, 43);
+    border-radius: 20px;
+}
+.c .sous-menu li:hover
+{
+    background-color: rgb(24, 23, 22);
+    border-radius: 20px;
+}
+.menu input[type=checkbox]:checked ~ ul
+{
+    display: block;
+}
+@media all and ( max-width: 780px){
+    .menu> label{
+         display: block ;
+         color: #fff;
+         background-color: orangered;
+         text-align: center;
+         padding: 12px 0px;
+         cursor: pointer;
+         margin: 0 auto;
+         align-items: center;
+         border-radius: 20px;   
+        border-collapse: separate;
+        z-index: 120;
+    }
+    .menu ul{
+        display: none;
+    }
+    .menu ul li,.menu ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    .menu ul li a,.menu ul li:hover
+    { 
+        padding: 10px 0px;
+    }
+    .menu li:hover .sous-menu
+    { 
+        display: block;
+        position: static;
+        margin: 12px auto;
+        width: auto;
+        text-align: center;
+        border-collapse: separate;
+    }
+    .menu
+    {
+        width: auto;
+    }
+    .su, .sp{
+        margin: 0;
+        display: none;
+    }
+    #logo{
+        width: 40px;
+    }
+    .img { 
+        display: none;
+    }
+    details{
+        display: none;
+    }
+}
+.a,.c,.f,.p,.pa,.pr,.s,.socials>li,.sous-menu>li,.su>li{
+    list-style-type: none;
+}
+.titre_e{
+    color: orangered;
+}

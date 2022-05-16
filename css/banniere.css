@@ -1,0 +1,44 @@
+ h1{
+    font-size: 2.6rem;
+}
+ h2{
+    font-size: 4.8rem;
+}
+.sp{
+    font-size: 1.5rem;
+}
+a{
+    color: rgb(190, 179, 179);
+    text-decoration: none;
+}
+.titre{
+    color: rgb(184, 175, 175);
+    background: rgb(16, 16, 15);
+    font-family: cursive;
+    font-size: 1.5rem; 
+    top: 10px;
+    padding: auto;
+}
+.bani{
+    min-height: 1vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+}
+.bani ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    flex: 2 1 40rem;
+    font-size: 1.5rem;
+}
+.img{
+    margin: 20px;
+    top: 10px;
+    width: 200px;
+}
